@@ -1,0 +1,20 @@
+.footer {
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer button {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+  .footer button {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer button {
+    font-size: 1em;
+  }
+}

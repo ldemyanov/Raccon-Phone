@@ -1,0 +1,74 @@
+@import '@style/colors';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.8em;
+  flex-grow: 1;
+  padding: 0.8em;
+  border: 2px solid var(--primary_light);
+  background-color: var(--primary_dark_opacity);
+  border-radius: 0.8em;
+  transition: all 0.3s ease;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border: 2px solid var(--primary_light);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.label:hover {
+  border-color: var(--accent_orange);
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked ~ .filler {
+  background-color: var(--accent_orange);
+}
+
+.filler {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--primary_light);
+  transition: all 0.3s ease;
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.disabled .label {
+  cursor: not-allowed;
+}
+
+.disabled .label:hover {
+  border-color: var(--primary_light);
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    gap: 0.3em;
+    padding: 0.5em;
+  }
+
+  .label {
+    width: 24px;
+    height: 24px;
+  }
+
+  .label span {
+    /* margin: 2px; */
+    /* transform: scale(0.7); */
+  }
+}

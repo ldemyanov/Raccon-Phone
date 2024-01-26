@@ -1,0 +1,130 @@
+@import '@style/colors';
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary_light);
+  width: 100%;
+  height: 100%;
+}
+
+.cursorDefault {
+  cursor: url('@assets/images/pencil.png') 5 27, auto;
+}
+
+/* Pencil */
+
+.cursorPencil4 {
+  cursor: url('@assets/svg/pencilCursor/pencil-cursor-4.svg') 2 32, auto;
+}
+
+.cursorPencil8 {
+  cursor: url('@assets/svg/pencilCursor/pencil-cursor-8.svg') 3 29, auto;
+}
+
+.cursorPencil12 {
+  cursor: url('@assets/svg/pencilCursor/pencil-cursor-12.svg') 4 28, auto;
+}
+
+.cursorPencil16 {
+  cursor: url('@assets/svg/pencilCursor/pencil-cursor-16.svg') 5 27, auto;
+}
+
+.cursorPencil20 {
+  cursor: url('@assets/svg/pencilCursor/pencil-cursor-20.svg') 6 26, auto;
+}
+
+/* Eraser */
+
+.cursorEraser4 {
+  cursor: url('@assets/svg/eraserCursor/eraser-cursor-4.svg') 2 32, auto;
+}
+
+.cursorEraser8 {
+  cursor: url('@assets/svg/eraserCursor/eraser-cursor-8.svg') 3 29, auto;
+}
+
+.cursorEraser12 {
+  cursor: url('@assets/svg/eraserCursor/eraser-cursor-12.svg') 4 28, auto;
+}
+
+.cursorEraser16 {
+  cursor: url('@assets/svg/eraserCursor/eraser-cursor-16.svg') 5 27, auto;
+}
+
+.cursorEraser20 {
+  cursor: url('@assets/svg/eraserCursor/eraser-cursor-20.svg') 6 26, auto;
+}
+
+/* Rectangle */
+
+.cursorRectangle4 {
+  cursor: url('@assets/svg/rectangleCursor/rectangle-cursor-4.svg') 2 32, auto;
+}
+
+.cursorRectangle8 {
+  cursor: url('@assets/svg/rectangleCursor/rectangle-cursor-8.svg') 3 29, auto;
+}
+
+.cursorRectangle12 {
+  cursor: url('@assets/svg/rectangleCursor/rectangle-cursor-12.svg') 4 28, auto;
+}
+
+.cursorRectangle16 {
+  cursor: url('@assets/svg/rectangleCursor/rectangle-cursor-16.svg') 5 27, auto;
+}
+
+.cursorRectangle20 {
+  cursor: url('@assets/svg/rectangleCursor/rectangle-cursor-20.svg') 6 26, auto;
+}
+
+/* Circle */
+
+.cursorCircle4 {
+  cursor: url('@assets/svg/circleCursor/circle-cursor-4.svg') 2 32, auto;
+}
+
+.cursorCircle8 {
+  cursor: url('@assets/svg/circleCursor/circle-cursor-8.svg') 3 29, auto;
+}
+
+.cursorCircle12 {
+  cursor: url('@assets/svg/circleCursor/circle-cursor-12.svg') 4 28, auto;
+}
+
+.cursorCircle16 {
+  cursor: url('@assets/svg/circleCursor/circle-cursor-16.svg') 5 27, auto;
+}
+
+.cursorCircle20 {
+  cursor: url('@assets/svg/circleCursor/circle-cursor-20.svg') 6 26, auto;
+}
+
+/* Line */
+
+.cursorLine4 {
+  cursor: url('@assets/svg/lineCursor/line-cursor-4.svg') 2 31, auto;
+}
+
+.cursorLine8 {
+  cursor: url('@assets/svg/lineCursor/line-cursor-8.svg') 4 29, auto;
+}
+
+.cursorLine12 {
+  cursor: url('@assets/svg/lineCursor/line-cursor-12.svg') 5 27, auto;
+}
+
+.cursorLine16 {
+  cursor: url('@assets/svg/lineCursor/line-cursor-16.svg') 6 26, auto;
+}
+
+.cursorLine20 {
+  cursor: url('@assets/svg/lineCursor/line-cursor-20.svg') 7 25, auto;
+}
+
+/* Line */
+
+.cursorPipette {
+  cursor: url('@assets/svg/pipetteCursor/pipette-cursor.svg') 5 27, auto;
+}

@@ -1,0 +1,152 @@
+@import '@style/colors';
+
+.container {
+  min-width: min-content;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 72px);
+  overflow-y: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background: var(--primary_dark_opacity);
+  border: 2px solid var(--primary_dark);
+  border-radius: 15px;
+}
+
+.container::-webkit-scrollbar {
+  width: 1.5em;
+}
+ 
+.container::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+ 
+.container::-webkit-scrollbar-thumb {
+  background-color: var(--primary_dark_opacity);
+  border: 2px solid var(--primary_dark);
+  border-radius: 15px;
+  outline: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.bottomRight {
+  margin: 10px 0;
+  float: right;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .content {
+    width: 90%;
+  }
+}
+
+.name {
+  font-family: 'Carter One', cursive;
+  font-size: 1.4em;
+  color: var(--accent_orange);
+  text-shadow: var(--border_text);
+  text-align: right;
+  padding: 5px;
+}
+
+.circle {
+  width: 75px;
+  height: 75px;
+  background: var(--primary_dark);
+  box-shadow: 0px 10px 10px var(--box-shadow), 0px 4px 4px var(--box-shadow);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.icon {
+  width: 55px;
+  aspect-ratio: 1 / 1;
+}
+
+.greenTick {
+  width: 30px;
+  margin: 2px 10px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary_light);
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  /* border: 1px solid red; */
+}
+
+.messageBlock {
+  display: flex;
+}
+
+.req {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.reqImg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--primary_light);
+  border-radius: 15px;
+}
+
+.reqWord {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  min-width: 100px;
+  text-align: center;
+  background: #ffffffcc;
+  border-top: 2px solid var(--primary_dark);
+  border-bottom: 2px solid var(--primary_dark);
+  padding: 2px 10px;
+  border-radius: 15px;
+}
+
+.reqBorder {
+  width: 100%;
+  border: 2px solid var(--primary_dark);
+}
+
+.appearNow {
+  animation: 1s showNow ease;
+}
+
+@keyframes showNow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+

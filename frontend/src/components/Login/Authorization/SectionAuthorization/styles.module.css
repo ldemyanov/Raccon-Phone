@@ -1,0 +1,47 @@
+@import '@style/colors';
+
+.section_authorization {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.wrapper_icon {
+  position: relative;
+  background-color: var(--primary_dark);
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.button_reload {
+  display: flex;
+  position: absolute;
+  left: 150px;
+  top: 160px;
+  background-color: var(--primary_light);
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.button_reload:hover {
+  background-color: var(--accent_orange);
+}
+
+@media (max-width: 1000px) {
+  .wrapper_icon {
+    width: 120px;
+    padding: 15px;
+  }
+
+  .button_reload {
+    left: 80px;
+    top: 80px;
+    padding: 7px;
+  }
+}

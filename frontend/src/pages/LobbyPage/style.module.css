@@ -1,0 +1,17 @@
+@import '@style/colors';
+
+.layout {
+  display: flex;
+  gap: 40px;
+  height: 100%;
+}
+
+.layout > section:first-child {
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  .layout {
+    gap: 15px;
+  }
+}

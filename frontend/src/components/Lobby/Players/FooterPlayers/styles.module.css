@@ -1,0 +1,32 @@
+@import '@style/colors';
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  margin-top: auto;
+}
+
+.text {
+  display: inline-block;
+  color: var(--accent_red);
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: var(--border_text);
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,11 @@
+.phone {
+  width: 482px;
+  height: 279px;
+}
+
+@media (max-width: 1000px) {
+  .phone {
+    width: 241px;
+    height: 140px;
+  }
+}

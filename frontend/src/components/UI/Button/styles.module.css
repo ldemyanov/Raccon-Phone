@@ -1,0 +1,36 @@
+@import '@style/colors';
+
+.button {
+  /* display: flex;
+  flex-direction: row; */
+  /* align-items: flex-start; */
+  padding: 0.1em 1.5em;
+  gap: 40px;
+  background-color: var(--primary_light);
+  border: 5px solid var(--primary_dark_opacity);
+  border-radius: 15px;
+  font-family: 'Carter One';
+  font-size: 1.7em;
+  color: var(--accent_orange);
+  text-transform: uppercase;
+  text-shadow: var(--border_text);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:not([disabled]):hover {
+  background-color: var(--primary_dark_opacity);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  color: var(--primary_light_opacity);
+  background-color: var(--primary_light_opacity);
+}
+
+@media (max-width: 1000px) {
+  .button {
+    padding: 0.1em 1.2em;
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,47 @@
+@import '@style/colors';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  height: 100%;
+}
+
+.logo__img {
+  height: 100%;
+  width: auto;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.logo__text {
+  font-family: 'Carter One', cursive;
+  font-size: 2em;
+  line-height: 116%;
+  color: var(--accent_orange);
+  text-shadow: var(--border_text);
+}
+
+.sound__img {
+  width: 50px;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    height: 50px;
+  }
+
+  .logo__text {
+    font-size: 1em;
+  }
+
+  .sound__img {
+    width: 30px;
+  }
+}

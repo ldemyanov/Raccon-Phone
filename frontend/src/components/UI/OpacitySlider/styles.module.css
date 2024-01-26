@@ -1,0 +1,201 @@
+@import '@style/colors';
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  flex-grow: 1;
+  padding: 0.8em;
+  border: 2px solid var(--primary_light);
+  background-color: var(--primary_dark_opacity);
+  border-radius: 0.8em;
+  transition: all 0.3s ease;
+}
+
+.circle,
+.circle_fill {
+  width: 1.5em;
+  height: 1.5em;
+  border: 2px solid var(--primary_light);
+  border-radius: 50%;
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.3s ease;
+}
+
+.circle_fill {
+  background-color: var(--primary_light);
+}
+
+.slider {
+  flex-grow: 1;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--accent_orange);
+  cursor: pointer;
+  transform: translateY(-0.3em);
+}
+
+.slider::-moz-range-thumb {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--accent_orange);
+  cursor: pointer;
+}
+
+.slider::-ms-thumb {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: var(--accent_orange);
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.8em;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: var(--primary_dark_opacity);
+  border-radius: 0.5em;
+}
+
+.slider:hover::-webkit-slider-runnable-track {
+  background: var(--primary_dark);
+}
+
+.slider::-moz-range-track {
+  width: 100%;
+  height: 0.8em;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: var(--primary_dark_opacity);
+  border-radius: 0.5em;
+}
+
+.slider::-ms-track {
+  width: 100%;
+  height: 0.8em;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.slider::-ms-fill-lower {
+  background: var(--primary_dark_opacity);
+  border-radius: 0.5em;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slider:hover::-ms-fill-lower {
+  background: var(--primary_dark);
+}
+
+.slider::-ms-fill-upper {
+  background: var(--primary_dark_opacity);
+  border-radius: 0.5em;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slider:hover::-ms-fill-upper {
+  background: var(--primary_dark);
+}
+
+.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.disabled .slider:hover::-webkit-slider-runnable-track {
+  cursor: not-allowed;
+  background: var(--primary_dark_opacity);
+}
+
+.disabled .slider:hover::-ms-fill-lower {
+  cursor: not-allowed;
+  background: var(--primary_dark_opacity);
+}
+
+.disabled .slider:hover::-ms-fill-lower {
+  cursor: not-allowed;
+  background: var(--primary_dark_opacity);
+}
+
+.disabled .slider::-webkit-slider-thumb {
+  background: var(--accent_orange);
+  cursor: not-allowed;
+}
+
+.disabled .slider::-moz-range-thumb {
+  background: var(--accent_orange);
+  cursor: not-allowed;
+}
+
+.disabled .slider::-ms-thumb {
+  background: var(--accent_orange);
+  cursor: not-allowed;
+}
+
+@media (max-width: 1000px) {
+  .label {
+    gap: 0.3em;
+    padding: 0.5em;
+  }
+
+  .circle,
+  .circle_fill {
+    width: 1em;
+    height: 1em;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1em;
+    height: 1em;
+    transform: translateY(-0.2em);
+  }
+
+  .slider::-moz-range-thumb {
+    width: 1em;
+    height: 1em;
+    transform: translateY(-0.2em);
+  }
+
+  .slider::-ms-thumb {
+    width: 1em;
+    height: 1em;
+    transform: translateY(-0.2em);
+  }
+
+  .slider::-webkit-slider-runnable-track {
+    height: 0.5em;
+  }
+
+  .slider::-moz-range-track {
+    height: 0.5em;
+  }
+}

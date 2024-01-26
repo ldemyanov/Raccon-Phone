@@ -1,0 +1,7 @@
+.redoSvg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: var(--primary_light);
+  transition: all 0.3s ease;
+}

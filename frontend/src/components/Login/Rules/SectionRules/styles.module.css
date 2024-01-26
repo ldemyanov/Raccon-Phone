@@ -1,0 +1,42 @@
+@import '@style/colors';
+
+.wrapper_rules {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  gap: 10px;
+}
+
+.image_rules {
+  height: 100%;
+  max-height: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.name_rules {
+  color: var(--primary_light);
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 45px;
+  text-align: center;
+}
+
+.text_rules {
+  font-size: 1.2em;
+  color: var(--primary_light);
+  text-align: center;
+  max-width: 20em;
+}
+
+@media (max-width: 1000px) {
+  .name_rules {
+    font-size: 1.2em;
+  }
+
+  .text_rules {
+    font-size: 1em;
+  }
+}

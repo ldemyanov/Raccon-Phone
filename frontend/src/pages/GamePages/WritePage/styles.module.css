@@ -1,0 +1,42 @@
+@import '@style/colors';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Carter One';
+  font-size: 2.8em;
+  text-transform: uppercase;
+  color: var(--accent_orange);
+  text-shadow: var(--border_text);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  width: 60%;
+}
+
+@media (max-width: 1500px) {
+  .row {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 2em;
+  }
+
+  .row {
+    flex-direction: column;
+    width: 80%;
+  }
+}

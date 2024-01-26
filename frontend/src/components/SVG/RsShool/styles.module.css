@@ -1,0 +1,22 @@
+@import '@style/colors';
+
+.rs_school {
+  display: inline-block;
+  width: 114px;
+  height: 42px;
+}
+
+.rs_school path {
+  transition: 0.5s;
+}
+
+.rs_school:hover path {
+  fill: var(--accent_orange);
+}
+
+@media (max-width: 1000px) {
+  .rs_school {
+    width: 80px;
+    height: auto;
+  }
+}

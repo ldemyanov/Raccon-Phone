@@ -1,0 +1,80 @@
+@import '@style/colors';
+
+.wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas: 'logo year github';
+}
+
+.year {
+  grid-area: year;
+  text-align: center;
+}
+
+.rs_school {
+  grid-area: logo;
+}
+
+.wrapper_git {
+  grid-area: github;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+  text-align: end;
+  transition: 0.5s;
+}
+
+.line {
+  width: 2px;
+  height: 30px;
+  background: var(--accent_orange);
+}
+
+.wrapper_git a {
+  transition: 0.5s;
+}
+
+.wrapper_git a:hover {
+  color: var(--accent_orange);
+  animation: bounce 0.5s linear;
+}
+
+@media (max-width: 1200px) {
+  .wrapper_git {
+    gap: 10px;
+  }
+
+  .line {
+    width: 2px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .wrapper {
+    padding: 5px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'logo github' 'year github';
+  }
+
+  .year {
+    text-align: left;
+    line-height: 1em;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

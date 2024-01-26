@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+  flex: 1 1;
+}
+
+.description {
+  width: 80%;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .icon {
+    width: 70px;
+  }
+
+  .description {
+    width: 100%;
+    font-size: 0.6em;
+  }
+}

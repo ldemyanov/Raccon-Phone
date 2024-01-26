@@ -1,0 +1,35 @@
+@import '@style/colors';
+
+.input {
+  width: 100%;
+  border: 5px solid var(--primary_light);
+  border-radius: 15px;
+  color: var(--primary_dark);
+  font-size: 1.7em;
+  padding: 0.1em;
+  background-color: transparent;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.input:focus {
+  outline: 0;
+  border: 5px solid var(--accent_orange);
+}
+
+.input::placeholder {
+  color: var(--primary_dark);
+  text-align: center;
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  color: var(--primary_light_opacity);
+  background-color: var(--primary_light_opacity);
+}
+
+@media (max-width: 1000px) {
+  .input {
+    font-size: 1.2em;
+  }
+}

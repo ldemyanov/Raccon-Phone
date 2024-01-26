@@ -1,0 +1,16 @@
+@import '@style/colors';
+
+.sound_on {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.sound_on path {
+  transition: 0.5s;
+}
+
+.sound_on:hover path {
+  fill: var(--accent_orange);
+}

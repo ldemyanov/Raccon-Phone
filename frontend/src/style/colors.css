@@ -1,0 +1,16 @@
+:root {
+  --primary_light: #fcfffd;
+  --primary_dark: #351d5d;
+  --accent_orange: #f9c22e;
+  --accent_red: #d90368;
+  --bg_gradient_first: #24c6dc;
+  --bg_gradient_second: #514a9d;
+  --primary_light_opacity: rgba(252, 255, 253, 0.5);
+  --primary_dark_opacity: rgba(53, 29, 93, 0.25);
+  --primary_dark_inactive: rgba(252, 255, 253, 0.5);
+  --border_text: var(--primary_dark) 2px 0px, var(--primary_dark) 2px 2px, var(--primary_dark) 0px 2px,
+    var(--primary_dark) -2px 2px, var(--primary_dark) -2px 0px, var(--primary_dark) -2px -2px,
+    var(--primary_dark) 0px -2px, var(--primary_dark) 2px -2px;
+  --bg_gradient_container: linear-gradient(225deg, #83a4d4 0%, #b6fbff 100%);
+  --box-shadow: rgba(0, 0, 0, 0.25);
+}

@@ -1,0 +1,6 @@
+@import '@style/colors';
+
+.header {
+  text-transform: uppercase;
+  text-align: center;
+}

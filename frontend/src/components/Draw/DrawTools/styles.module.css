@@ -1,0 +1,35 @@
+@import '@style/colors';
+
+.wrapper {
+  position: relative;
+  z-index: 1000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
+  padding: 0.5em;
+  background: var(--primary_dark_opacity);
+  border-radius: 0.8em;
+}
+
+.toolsButton:hover svg {
+  fill: var(--accent_orange);
+}
+
+.toolsButton:hover path {
+  stroke: var(--accent_orange);
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    gap: 5px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    order: 2;
+    grid-template-columns: repeat(4, 1fr);
+    height: 11%;
+  }
+}
